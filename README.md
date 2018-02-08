@@ -1,10 +1,9 @@
 # EVENTBRITE-like
 
 ## 1. Models, signup, sign-in
-</br>
+
 ### 1.1. Préparatifs
-</br>
-**rails new eventbrite-like**
+**rails new eventbrite-like**<br/>
 **cd eventbrite-like**
 Ouvrir le dossier dans sublime-text. Supprimer le contenu du gemfile pour le remplacer par ce contenu: [Gemfile de Felix](https://github.com/felhix/cheat_sheets/blob/master/Ruby/Gemfile.rb).
 *(pour le correcteur:* bundle install --without production *puis* db:migrate*).*
