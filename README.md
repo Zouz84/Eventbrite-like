@@ -49,7 +49,8 @@ Ensuite on va demander à Rails de créer une table dans notre base de donnée, 
 <br/>
 <br/>
 ### 1.3. Controller-Users
-Là on se dit "Pourquoi ne pas créer un controller qui appellerait ces models fraîchement créés?". Et bien oui dis donc, qu'attendez nous ? <br/>
+#### 1.3.1 MethodMan
+Là on se dit "Pourquoi ne pas créer un controller qui appellerait ces models fraîchement créés?". Et bien oui dis donc, qu'attendons nous ? <br/>
 `rails g controller users`
 Dans ce controller on va faire un petit CRUD dont on a le secret. Alors on va ajouter dedans:(bon, ce CRUD on l'a déjà fait il y a 2 jours, alors un copié/coller fera amplement l'affaire)<br/>
 ``` Ruby
@@ -93,8 +94,10 @@ Dans ce controller on va faire un petit CRUD dont on a le secret. Alors on va aj
     end
   end
 ```
-  
-
+#### 1.3.2 La Routine
+Ouvrons notre config > routes.rb <br/>
+D'accord maintenant on peut se poser la question, quelle va être notre page principale, quand le visiteur arrive sur le site pour la premiere fois? Disons: `root 'users#index'`pour qu'on tombe sur la methode index de notre controlleur users (soit:@users = User.all).
+<rb/>
 
 
 
