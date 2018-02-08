@@ -19,6 +19,7 @@ On leur donnes les attributs suivants grâce à la console:</br>
 et</br>
 `rails generate model event description:text date:datetime place:string`</br>
 <br/>
+<br/>
 Etant donné qu'un User peut créer plusieurs évènements, on va créer sa relation:<br/>
 Donc dans le model *user*, ajouter: **has_many :created_events, class_name: "Event"**.<br/>
 REMARQUE: le *class_name* permet de relier ce model *user* avec la *class Event* du *model event*.
