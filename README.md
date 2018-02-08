@@ -52,7 +52,7 @@ Ensuite on va demander à Rails de créer une table dans notre base de donnée, 
 Là on se dit "Pourquoi ne pas créer un controller qui appellerait ces models fraîchement créés?". Et bien oui dis donc, qu'attendez nous ? <br/>
 `rails g controller users`
 Dans ce controller on va faire un petit CRUD dont on a le secret. Alors on va ajouter dedans:(bon, ce CRUD on l'a déjà fait il y a 2 jours, alors un copié/coller fera amplement l'affaire)<br/>
-        ``` Ruby
+``` Ruby
            def new
     @user = User.new
   end
@@ -92,7 +92,7 @@ Dans ce controller on va faire un petit CRUD dont on a le secret. Alors on va aj
     else render 'edit'
     end
   end
-  ```
+```
   
 
 
