@@ -96,15 +96,23 @@ Dans ce controller on va faire un petit CRUD dont on a le secret. Alors on va aj
 ```
 #### 1.3.2 La Routine
 Ouvrons notre config > routes.rb <br/>
-D'accord maintenant on peut se poser la question, quelle va être notre page principale, quand le visiteur arrive sur le site pour la premiere fois? Disons: `root 'users#index'`pour qu'on tombe sur la methode index de notre controlleur users (soit:@users = User.all).
-<rb/>
+D'accord maintenant on peut se poser la question, quelle va être notre page principale, quand le visiteur arrive sur le site pour la premiere fois? Disons: `root 'users#index'`pour qu'on tombe sur la methode index de notre controlleur users (soit:@users = User.all).<rb/>
+On met aussi le **resources :users**, je sais pas trop pourquoi par contre, faut demander à Félix.
+<br/>
+<br/>
+Copie les views de USER. (EDITER a rajouter)
+MARCHE PAS
+rails g controller session
+copie/colle le session controller
 
-
-
-
-
-
-
-
-
-
+controller user:
+validates :name,  presence: true
+validates :name,  presence: true, length: { maximum: 50 }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, length: { maximum: 255 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
+has_secure_password
+  validates :password, presence: true, length: { minimum: 6 }
+  
+  Events controller
